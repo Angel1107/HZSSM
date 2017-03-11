@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "../mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sixstar.dao.UserDao">
+	<select id="login" parameterType="com.sixstar.entity.User" resultType="com.sixstar.entity.User">
+		select id,userName,password from user where userName=#{userName} and password=#{password}
+	</select>
+</mapper>
